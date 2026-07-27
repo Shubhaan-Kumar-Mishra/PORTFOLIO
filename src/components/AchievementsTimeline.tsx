@@ -74,6 +74,31 @@ function AchievementCard({ a, delay }: { a: typeof achievements[0]; delay: numbe
         <h3 style={{ color: "#ffffff", fontSize: "0.88rem", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "4px" }}>{a.title}</h3>
         <p style={{ fontSize: "0.68rem", fontFamily: "IBM Plex Mono, monospace", color: "rgba(255,255,255,0.3)", marginBottom: "12px" }}>{a.issuer}</p>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.75rem", lineHeight: 1.5 }}>{a.description}</p>
+        {"credentialUrl" in a && a.credentialUrl && (
+          <a
+            href={a.credentialUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor
+            style={{
+              marginTop: "16px",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              fontSize: "0.68rem",
+              fontFamily: "IBM Plex Mono, monospace",
+              color: "#fca5a5",
+              textDecoration: "none",
+              transition: "opacity 0.2s ease",
+            }}
+            className="footer-link-hover"
+          >
+            Verify Credential
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M7 17L17 7M7 7h10v10" />
+            </svg>
+          </a>
+        )}
       </div>
     </motion.div>
   );
@@ -168,6 +193,30 @@ function TimelineCard({ item, color }: { item: typeof timeline[0]; color: string
       <div style={{ fontSize: "0.75rem", fontFamily: "IBM Plex Mono, monospace", fontWeight: 600, color, marginBottom: "6px" }}>{item.year}</div>
       <h4 style={{ color: "#ffffff", fontSize: "0.88rem", fontWeight: 600, marginBottom: "6px" }}>{item.title}</h4>
       <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.75rem", lineHeight: 1.5 }}>{item.description}</p>
+      {"credentialUrl" in item && item.credentialUrl && (
+        <a
+          href={item.credentialUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cursor
+          style={{
+            marginTop: "12px",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "6px",
+            fontSize: "0.68rem",
+            fontFamily: "IBM Plex Mono, monospace",
+            color: color || "#fca5a5",
+            textDecoration: "none",
+          }}
+          className="footer-link-hover"
+        >
+          View Certificate
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M7 17L17 7M7 7h10v10" />
+          </svg>
+        </a>
+      )}
     </div>
   );
 }

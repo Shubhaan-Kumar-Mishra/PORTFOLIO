@@ -191,6 +191,7 @@ export const achievements = [
     color: "#3b82f6",
     year: "2024",
     metric: "Microsoft Certified",
+    credentialUrl: "https://drive.google.com/file/d/1OS-kuRO0ETL4ao7wtVWL9BxvbeJW7Rvs/view?usp=sharing",
   },
   {
     title: "BridgeLabz SIPP",
@@ -253,6 +254,7 @@ export const timeline = [
     description: "Earned Microsoft Azure AI Fundamentals (AI-900). Solved 200+ LeetCode problems. Completed Git and Linux workshops.",
     type: "achievement",
     icon: "award",
+    credentialUrl: "https://drive.google.com/file/d/1OS-kuRO0ETL4ao7wtVWL9BxvbeJW7Rvs/view?usp=sharing",
   },
   {
     year: "2025",
