@@ -97,7 +97,7 @@ export default function Contact() {
                   { key: "email", val: personalInfo.email },
                   { key: "degree", val: "B.Tech CS" },
                   { key: "batch", val: education.year },
-                  { key: "cpi", val: education.cgpa },
+                  { key: "location", val: personalInfo.location },
                   { key: "status", val: personalInfo.availability },
                 ].map(({ key, val }) => (
                   <div key={key} style={{ paddingLeft: "20px" }}>

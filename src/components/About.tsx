@@ -124,7 +124,7 @@ export default function About() {
                 {[
                   { label: "Location", value: personalInfo.location, icon: "📍" },
                   { label: "Degree", value: "B.Tech — CS", icon: "🎓" },
-                  { label: "CPI Score", value: education.cgpa, icon: "📊" },
+                  { label: "Focus", value: "Backend Systems", icon: "⚡" },
                   { label: "Timeline", value: education.year, icon: "📅" },
                   { label: "Email", value: "On request", icon: "📧" },
                   { label: "Status", value: "Available", icon: "✅" },
@@ -218,7 +218,7 @@ export default function About() {
               <div style={{ padding: "20px", borderRadius: "8px", background: "rgba(255,255,255,0.01)", border: "1px solid rgba(255,255,255,0.03)" }}>
                 <h5 style={{ color: "#ffffff", fontSize: "1rem", fontWeight: 600, letterSpacing: "-0.01em" }}>{education.degree}</h5>
                 <p style={{ fontSize: "0.75rem", fontFamily: "IBM Plex Mono, monospace", color: "rgba(255,255,255,0.4)", marginTop: "4px", marginBottom: "16px" }}>
-                  {education.year} · CPI {education.cgpa}
+                  Batch {education.year}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
                   {education.coursework.map((c) => (

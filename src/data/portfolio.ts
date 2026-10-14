@@ -28,7 +28,6 @@ export const personalInfo = {
 export const education = {
   degree: "Bachelor of Technology — Computer Science",
   institution: "B.Tech CS · Batch 2023–2027",
-  cgpa: "6.95",
   year: "2023 – 2027",
   location: "India",
   coursework: ["Data Structures", "Algorithms", "Operating Systems", "DBMS", "Computer Networks", "Software Engineering"],
