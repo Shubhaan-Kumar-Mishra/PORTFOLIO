@@ -22,7 +22,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/shubhaan-kumar-mishra-243350293/",
   availability: "Open to Internship & Full-Time",
   bio: "I build production-grade backend systems — REST APIs, real-time pipelines, and full-stack apps that are secure, scalable, and maintainable. Currently pursuing B.Tech CS (2023–2027) with hands-on experience in Java, Node.js, and cloud-deployed architectures.",
-  resumeUrl: "https://drive.google.com/file/d/1MP_IsZi_kvO5H55Do1ouiiKSjp7HSbAq/view", // Replace with actual resume URL
+  resumeUrl: "https://drive.google.com/file/d/1QGbpdAoP6HJxkqUuFqJ8_FBjM3OIdx-K/view?usp=sharing", // Replace with actual resume URL
 };
 
 export const education = {

@@ -153,6 +153,8 @@ export default function Contact() {
             {/* Resume download */}
             <a
               href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               data-cursor
               style={{
                 display: "flex",
